@@ -1,13 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer">I would advice them to use encryption, to have updated software and use validation. I would also recommend have the software on auto-update and run security checks on a regular basis</p>
-  </body>
+
+<head>
+  <title>GameHub</title>
+  <link rel="icon" type="image/x-icon" href="/images/GameHub_Logo white text.png">
+  <meta name="description" content="A place for gamers to buy and sell used games">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet">
+  <link href="slider.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">-->
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <header id="app-header">
+
+    <div id="app-header-content">
+
+      <a href="index.html">
+        <img id="app-header-logo" src="images\GameHub_Logo white text.png">
+      </a>
+
+
+      <!--SHOPPING CART CONTAINER-->
+
+      <div class="shopping-cart-frame">
+        <img id="cart-orange" src="images/Ikoner/cart-outline-orange.png">
+        <img id="cart-white" src="images/Ikoner/cart-outline.png">
+      </div>
+
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-navbar">
+    <nav class="mobile-buttons">
+      <ul class="mobile-ul">
+        <li id=mobilehome><a href="index.html" class="mobilehome-active">Home</a></li>
+        <li id="mobilegames"><a href="games.html">Games</a></li>
+        <li id="mobileabout"><a href="about.html">About</a></li>
+        <li id="mobilecontact"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <main class="main-view">
+
+
+    <div class="slider-frame">
+      <div class="slide-images">
+        <div class="slider-img-container">
+          <img src="images/games/index_png/Forge_legend.png">
+        </div>
+        <div class="slider-img-container">
+          <img src="images/games/index_png/Cyberpunk.png">
+        </div>
+        <div class="slider-img-container">
+          <img src="images/games/index_png/Assassin.png">
+        </div>
+      </div>
+    </div>
+    <div class="mobile-content">
+
+      <p class="start-gaming">START <span class=highlight>GAMING</span> TODAY</p>
+      <div class="games-btn">
+      </div>
+    </div>
+
+    <div class="game-catalogue">
+      <div class="game-cover-background">
+        <div class="game-cover ping-pong"></div>
+        <div class="spaced-row">
+          <div class="pingpong-text">
+            <p id="pingpong-text-big">PING PONG</p>
+            <p id="pingpong-text-small">PLAYBOX</p>
+          </div>
+          <button class="pingpong-button">$10</button>
+        </div>
+      </div>
+
+      <div class="game-cover-background">
+        <div class="game-cover furious"></div>
+        <div class="spaced-row-furious">
+          <div class="furious-text">
+            <p id="furious-text-big">FURIOUS</p>
+            <p id="furious-text-small">PLAYBOX</p>
+          </div>
+          <button class="furious-button">$10</button>
+        </div>
+      </div>
+
+
+      <div class="game-cover-background">
+        <div class="game-cover super-duper"></div>
+        <div class=spaced-row-superduper>
+          <div class="superduper-text">
+            <p id="superduper-text-big">SUPER DUPER</p>
+            <P id="superduper-text-small">PLAYBOX</P>
+          </div>
+          <button class="superduper-button">$25</button>
+        </div>
+      </div>
+
+      <div class="game-cover-background">
+        <div class="game-cover assassin"></div>
+        <div class="spaced-row-assassin">
+          <div class="assassin-text">
+            <p id="assassin-text-big">ASSASSIN</p>
+            <p id="assassin-text-small">PLAYBOX</p>
+          </div>
+          <button class="assassin-button">$35</button>
+        </div>
+      </div>
+
+
+
+  </main>
+  <p class="footer-text">Powered By GameHub Engine</p>
+</body>
+
 </html>
