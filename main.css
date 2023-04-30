@@ -1,0 +1,620 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
+body {
+    background-color: black;
+    background-image: url(images/Bluryblue.png);
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 0;
+    background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  min-height: 100vh;
+}
+
+#app-header {
+    width: 100%;
+    position: relative;
+    height: 145px;
+    background-color: rgb(0, 0, 0);
+}
+
+#bottom-line {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid white;
+    padding-bottom: 5%;
+}
+
+.footer-text {
+    color: white;
+    font-size: 0.800rem;
+    font-weight: var(--fw-normal);
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid white;
+    margin-top: 75px;
+    justify-content: flex-end;
+    
+}
+
+#app-header-content {
+    max-width: 1200px;
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+.main-view {
+    padding-top: 80px;
+    max-width: 1200px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+#app-header-logo {
+    height: 140px; 
+    padding: 10px;
+}
+
+nav {
+    margin-left: auto;
+    position: sticky;
+}
+ 
+nav li {
+    display: inline-block;
+  
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color:#F0A718;
+    cursor: pointer;
+}
+
+.active {
+    text-decoration: underline ;
+    color:#F0A718;
+}
+
+nav{
+    vertical-align: top;
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 100px;
+    display:inline-flex;
+}
+
+/*images displayed on home page starts here*/
+
+.game-catalogue {
+    width: 100%;
+    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: -3%;
+}
+
+.ping-pong {  
+    background-image: url(images/games/GameHub_covers.jpg);    
+}
+
+.furious {
+    background-image: url(images/games/GameHub_covers4.jpg);
+}
+
+.super-duper {
+    background-image: url(images/games/GameHub_covers2.jpg)
+}
+
+.assassin {
+    background-image: url(images/games/GameHub_covers5.jpg)
+}
+
+.space-war {
+    background-image: url(images/games/GameHub_covers6.jpg)
+}
+
+.racing {
+    background-image: url(images/games/GameHub_covers7.jpg);
+}
+
+.game-cover:hover {
+    opacity: 80%;
+}
+
+.bluryblue {
+    width: 100%;
+    display: flex;
+    
+}
+
+.shopping-cart-frame{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin:0;
+    padding:0;
+}
+
+.shopping-cart-frame{
+    margin-top: 110px;
+    margin-left: 45%; 
+}
+
+.shopping-cart-frame img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0ms;
+}
+
+.shopping-cart-frame #cart-white:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.game-cover-background {
+    width: 218px;
+    height: 280px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 14px;
+}
+
+.game-cover {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.mobile-content {
+    visibility: hidden;
+    background-color: #007CA3;
+    height: 100%;
+    padding: 1px;
+}
+
+.start-gaming{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.highlight{
+    color: #F0A718;
+}
+
+.mobile-navbar{
+    
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 60px;
+    margin-left: 80%;
+    display:none;
+    }
+
+   
+  
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .used-games-btn{
+        
+    }
+
+    .desktop-nav{
+        visibility: hidden;
+    }
+
+    .mobile-navbar{
+        visibility: visible;
+        margin-top: -240px;
+        display:flex;
+        justify-content: space-around;
+
+    }
+
+    #mobilehome{
+        background-color: #007CA3;
+        border-radius: 14px;
+    }
+
+    .mobilehome-active{
+        background-color: #F0A718;
+        border-radius: 14px;
+    }
+
+    #mobilegames{
+        
+        background-color: #007CA3;
+        border-radius: 14px;
+        
+        
+    }
+
+    .mobilegames-active{
+        background-color: #F0A718;
+        border-radius: 14px;
+        
+    }
+
+    .mobile-ul{
+        color: black;
+    }
+
+    #mobileabout{
+        background-color: #007CA3;
+        border-radius: 14px;
+    }
+
+    #mobilecontact{
+        background-color: #007CA3;
+        border-radius: 14px;
+    }
+    
+    .game-cover-background {
+        width: 109px;
+        height: 140px;
+    }
+
+    #app-header-logo {
+        max-width: flex;
+    }
+
+    #app-header {
+        font-size: 0.5em;
+    }
+
+    .main-view {
+        width: 100%;
+    }
+
+    .mobile-content {
+        visibility: visible;
+    }
+
+    .footer-text {
+        font-size: 0.400rem;
+    }
+
+   .shopping-cart-frame{
+    position: absolute;
+    display: flex;
+    width:15px;
+    height:15px;
+   }
+
+   .game-catalogue{
+    margin-top:2%;
+   }
+
+   #pingpong-text-big{
+    font-size: 0.4rem;
+   }
+
+   #pingpong-text-small{
+    font-size: 0.7rem;
+}
+
+#furious-text-big{
+    font-size: 0.4rem;
+}
+
+#superduper-text-big{
+    font-size: 0.4rem;
+}
+
+#assassin-text-big{
+    font-size: 0.4rem;
+}
+
+.spaced-row{
+    max-height: 36px;
+}
+
+}
+
+.unsplash-img-container{
+    width:auto;
+    display: flex;
+    /*display: inline-flex;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: -3%;
+}
+
+.unsplash-background-cover{
+    width: 40%;
+    height: 25%;
+    margin: 0;
+    display: flex;
+    border-radius: 14px;
+
+}
+
+.unsplash-img{
+    background-image: url(images/Unsplash/martin-katler-Rho7F8Qskh4-unsplash.jpg);
+    border-radius: 14px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.about-text-container{
+    display: flex;
+    width: 50%;
+    
+    
+    flex-wrap: wrap;
+    
+    
+}
+
+.about-text {
+    color: white;
+    font-size: 1.8rem;
+    /*text-align: left;*/
+    /*margin-left: 48%;
+    margin-top: 13%;*/
+}
+
+
+/*IMAGES AND TEXT UNDER SLIDER FRAME*/
+
+.pingpong-text{
+    color: white;
+}
+
+#pingpong-text-big{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#pingpong-text-small{
+    color:white;
+    font-size: 0.5rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.spaced-row{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 300px;
+    padding: 5px;
+}
+
+.pingpong-button{
+    background: green;
+    max-width: fit-content;
+    text-align: center;
+    border-radius: 10%;
+    color: white;
+    padding: 5%;
+    cursor: pointer;
+    border: none;
+    flex-basis: 20%;
+    
+}
+
+.pingpong-button:hover{
+    background: rgb(0, 59, 0)
+}
+
+.furious-button{
+    background: green;
+    max-width: fit-content;
+    text-align: center;
+    border-radius: 10%;
+    color: white;
+    padding: 5%;
+    cursor: pointer;
+    border: none;
+    flex-basis: 20%;
+}
+
+.furious-button:hover{
+    background: rgb(0, 59, 0)
+}
+
+#furious-text-small, #furious-text-big{
+    color: white;
+}
+
+.spaced-row-furious{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 300px;
+    padding: 5px;
+    max-height: 51.59px
+}
+
+#furious-text-big{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#furious-text-small{
+    font-size: 0.5rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.superduper-button{
+    background: green;
+    max-width: fit-content;
+    text-align: center;
+    border-radius: 10%;
+    color: white;
+    padding: 5%;
+    cursor: pointer;
+    border: none;
+    flex-basis: 20%;
+}
+
+.superduper-button:hover{
+    background: rgb(0, 59, 0)
+}
+
+.spaced-row-superduper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 300px;
+    padding: 5px;
+    max-height: 51.59px
+}
+
+#superduper-text-small, #superduper-text-big{
+    color: white;
+}
+
+#superduper-text-big{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#superduper-text-small{
+    font-size: 0.5rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.assassin-button{
+    background: green;
+    max-width: fit-content;
+    text-align: center;
+    border-radius: 10%;
+    color: white;
+    padding: 5%;
+    cursor: pointer;
+    border: none;
+    flex-basis: 20%;
+}
+
+.assassin-button:hover{
+    background: rgb(0, 59, 0)
+}
+
+.spaced-row-assassin{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 300px;
+    padding: 5px;
+    max-height: 51.59px
+}
+
+#assassin-text-big, #assassin-text-small{
+    color: white; 
+}
+
+#assassin-text-big{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#assassin-text-small{
+    font-size: 0.5rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+ 
+.used-games-btn{
+    background-color: orange;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 42.8%;
+    margin-top: 15%;
+    position: absolute;
+    cursor: pointer;
+    font-weight: 900;
+    }
+
+.used-games-btn:hover{
+    background-color: green;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+    
+
