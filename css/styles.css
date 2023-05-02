@@ -241,12 +241,9 @@ nav{
 
 @media screen and (max-width: 800px) {
 
+
     .text-container p{
         font-size: medium !important;
-    }
-
-    .used-games-btn{
-        
     }
 
     .desktop-nav{
@@ -604,6 +601,7 @@ nav{
     padding-right: 5%;
     cursor: pointer;
     font-weight: 900;
+    text-decoration: none;
     }
 
 .used-games-btn:hover{
@@ -612,14 +610,18 @@ nav{
 }
 
 input {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    
     
 }
 
 .contact-form-container{
-    background-color: grey;
-    padding: 10px;
+    background-color:  rgba(255, 255, 255, 0.192);
+    
+    padding: 50px;
     text-align: center;
+    
     
 
 }
@@ -627,12 +629,37 @@ input {
 .contact-form{
     display: flex;
     justify-content:center;
+    
 }
 
 .contact-form-left{
     flex-direction: column;
     display: flex;
+    
+    
 }
+
+.submit-contact-btn{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contactus-headline{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
 
 
 
