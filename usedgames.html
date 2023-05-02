@@ -7,7 +7,7 @@
     <meta name="description" content="A place for gamers to buy and sell used games">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
     <link href="slider.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,10 @@
     <header id="app-header">
 
         <div id="app-header-content">
-            <img id="app-header-logo" src="images\GameHub_Logo white text.png">
+
+            <a href="index.html">
+                <img id="app-header-logo" src="images\GameHub_Logo white text.png">
+            </a>
 
 
             <!--SHOPPING CART CONTAINER-->
@@ -34,10 +37,10 @@
 
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="games.html" class="nav-item active">Games</a></li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="contact.html" class="nav-item">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,10 +49,54 @@
     <div class="mobile-navbar">
         <nav class="mobile-buttons">
             <ul class="mobile-ul">
-                <li id=mobilehome><a href="index.html" class="mobilehome-active">Home</a></li>
-                <li id="mobilegames"><a href="games.html">Games</a></li>
-                <li id="mobileabout"><a href="about.html">About</a></li>
-                <li id="mobilecontact"><a href="contact.html">Contact</a></li>
+                <li class="nav-item-mobile"><a href="index.html">Home</a></li>
+                <li class="nav-item-mobile active-mobile"><a href="games.html">Games</a></li>
+                <li class="nav-item-mobile"><a href="about.html">About</a></li>
+                <li class="nav-item-mobile"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
+
+    <main class="main-view">
+
+        <div class="used-games-info-text">
+            <p>At GameHub you can buy or sell used games!</p>
+        </div>
+
+        <div class="game-catalogue">
+            <div class="game-cover-background">
+                <div class="game-cover ping-pong"></div>
+                <div class="spaced-row">
+                    <div class="pingpong-text">
+                        <p id="pingpong-text-big">PING PONG</p>
+                        <p id="pingpong-text-small">PLAYBOX</p>
+                    </div>
+                    <button class="pingpong-button">$5</button>
+                </div>
+            </div>
+
+            <div class="game-cover-background">
+                <div class="game-cover furious"></div>
+                <div class="spaced-row-furious">
+                    <div class="furious-text">
+                        <p id="furious-text-big">FURIOUS</p>
+                        <p id="furious-text-small">PLAYBOX</p>
+                    </div>
+                    <button class="furious-button">$5</button>
+                </div>
+            </div>
+
+
+            <div class="game-cover-background">
+                <div class="game-cover super-duper"></div>
+                <div class=spaced-row-superduper>
+                    <div class="superduper-text">
+                        <p id="superduper-text-big">SUPER DUPER</p>
+                        <P id="superduper-text-small">PLAYBOX</P>
+                    </div>
+                    <button class="superduper-button">$5</button>
+                </div>
+            </div>
+
+    </main>
+</body>

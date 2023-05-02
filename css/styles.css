@@ -231,6 +231,15 @@ nav{
     display:none;
     }
 
+    .used-games-info-text p{
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 70px;
+        text-align: center;
+        font-size: x-large;
+    }
+
    
   
 
@@ -652,6 +661,7 @@ input {
     display: flex;
     justify-content: center;
     color: rgb(255, 255, 255);
+    font-size: xx-large;
 }
 
 
