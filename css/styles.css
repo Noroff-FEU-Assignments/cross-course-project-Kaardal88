@@ -241,6 +241,10 @@ nav{
 
 @media screen and (max-width: 800px) {
 
+    .text-container p{
+        font-size: medium !important;
+    }
+
     .used-games-btn{
         
     }
@@ -367,20 +371,12 @@ nav{
 }
 
 .unsplash-img-container{
-    width:auto;
     display: flex;
-    /*display: inline-flex;*/
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-between;
     margin-top: -3%;
 }
 
 .unsplash-background-cover{
-    width: 40%;
-    height: 25%;
-    margin: 0;
-    display: flex;
+   
     border-radius: 14px;
 
 }
@@ -388,29 +384,29 @@ nav{
 .unsplash-img{
     background-image: url(/images/Unsplash/martin-katler-Rho7F8Qskh4-unsplash.jpg);
     border-radius: 14px;
-    height: 100%;
-    width: 100%;
-}
-
-
-
-.about-text-container{
-    display: flex;
     width: 50%;
-    
-    
-    flex-wrap: wrap;
-    
+    height: 50%;
+}
+
+
+
+.text-container p{
+    display: flex;
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size:x-large;
+}
+
+.gamehub-orange{
+    color:#F0A718;
+    text-align:left;
+    font-size: xx-large;
     
 }
 
-.about-text {
-    color: white;
-    font-size: 1.8rem;
-    /*text-align: left;*/
-    /*margin-left: 48%;
-    margin-top: 13%;*/
-}
+
 
 
 /*IMAGES AND TEXT UNDER SLIDER FRAME*/
