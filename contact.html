@@ -4,11 +4,11 @@
 <head>
     <title>GameHub</title>
     <link rel="icon" type="image/x-icon" href="/images/GameHub_Logo white text.png">
-    <meta name="description"
-        content="Get in touch with us using our Contact page. Fill out our simple contact form or reach out via email or phone. We're here to answer your questions and provide more information about our products and services">
+    <meta name="description" content="A place for gamers to buy and sell used games">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="slider.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">-->
@@ -16,30 +16,62 @@
 </head>
 
 <body>
+
+
+
     <header id="app-header">
+
         <div id="app-header-content">
-            <img id="app-header-logo" src="images\GameHub_Logo white text.png">
+
+            <a href="index.html">
+                <img id="app-header-logo" src="images\GameHub_Logo white text.png">
+            </a>
+
+
+            <!--SHOPPING CART CONTAINER-->
 
             <div class="shopping-cart-frame">
                 <img id="cart-orange" src="images/Ikoner/cart-outline-orange.png">
                 <img id="cart-white" src="images/Ikoner/cart-outline.png">
             </div>
 
-            <nav>
+            <nav class="desktop-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="games.html" class="nav-item">Games</a></li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="contact.html" class="nav-item active">Contact</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
 
-    <main>
+    <div class="mobile-navbar">
+        <nav class="mobile-buttons">
+            <ul class="mobile-ul">
+                <li class="nav-item-mobile"><a href="index.html">Home</a></li>
+                <li class="nav-item-mobile"><a href="games.html">Games</a></li>
+                <li class="nav-item-mobile"><a href="about.html">About</a></li>
+                <li class="nav-item-mobile active-mobile"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
+    <main class="main-view">
 
+        <div class="contact-form-container">
+            <h1>Contact us</h1>
+            <div class="contact-form">
+                <div class="contact-form-left">
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="Subject" />
+                    <div class="some-icons"></div>
+                </div>
+                <div>
+                    <textarea placeholder="Message"></textarea>
+                </div>
+            </div>
+        </div>
     </main>
-
 </body>

@@ -12,7 +12,7 @@
 
 body {
     background-color: black;
-    background-image: url(images/Bluryblue.png);
+    background-image: url(/images/Bluryblue.png);
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: 1.125rem;
@@ -87,7 +87,7 @@ nav li {
   
 }
 
-a {
+.nav-item {
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px;
@@ -127,27 +127,27 @@ nav{
 }
 
 .ping-pong {  
-    background-image: url(images/games/GameHub_covers.jpg);    
+    background-image: url(/images/games/GameHub_covers.jpg);    
 }
 
 .furious {
-    background-image: url(images/games/GameHub_covers4.jpg);
+    background-image: url(/images/games/GameHub_covers4.jpg);
 }
 
 .super-duper {
-    background-image: url(images/games/GameHub_covers2.jpg)
+    background-image: url(/images/games/GameHub_covers2.jpg)
 }
 
 .assassin {
-    background-image: url(images/games/GameHub_covers5.jpg)
+    background-image: url(/images/games/GameHub_covers5.jpg)
 }
 
 .space-war {
-    background-image: url(images/games/GameHub_covers6.jpg)
+    background-image: url(/images/games/GameHub_covers6.jpg)
 }
 
 .racing {
-    background-image: url(images/games/GameHub_covers7.jpg);
+    background-image: url(/images/games/GameHub_covers7.jpg);
 }
 
 .game-cover:hover {
@@ -257,14 +257,23 @@ nav{
 
     }
 
-    #mobilehome{
+    .nav-item-mobile {
         background-color: #007CA3;
         border-radius: 14px;
+        width: 20vw;
+        text-align: center;
+        
+        font-size: small;
     }
 
-    .mobilehome-active{
+
+    .nav-item-mobile a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .active-mobile {
         background-color: #F0A718;
-        border-radius: 14px;
     }
 
     #mobilegames{
@@ -377,7 +386,7 @@ nav{
 }
 
 .unsplash-img{
-    background-image: url(images/Unsplash/martin-katler-Rho7F8Qskh4-unsplash.jpg);
+    background-image: url(/images/Unsplash/martin-katler-Rho7F8Qskh4-unsplash.jpg);
     border-radius: 14px;
     height: 100%;
     width: 100%;
@@ -579,20 +588,24 @@ nav{
     padding: 0;
     margin: 0;
 }
+
+.used-games {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
  
 .used-games-btn{
     background-color: orange;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 100px;
-    display: flex;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 5%;
     padding-right: 5%;
-    margin-left: 42.8%;
-    margin-top: 15%;
-    position: absolute;
     cursor: pointer;
     font-weight: 900;
     }
@@ -600,6 +613,29 @@ nav{
 .used-games-btn:hover{
     background-color: green;
     color: rgb(255, 255, 255);
+}
+
+input {
+    background-color: black;
+    
+}
+
+.contact-form-container{
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    
+
+}
+
+.contact-form{
+    display: flex;
+    justify-content:center;
+}
+
+.contact-form-left{
+    flex-direction: column;
+    display: flex;
 }
 
 
