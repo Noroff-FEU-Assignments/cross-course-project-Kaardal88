@@ -252,6 +252,8 @@ nav{
 @media screen and (max-width: 800px) {
 
 
+    
+
     .text-container p{
         font-size: medium !important;
     }
@@ -699,6 +701,29 @@ input {
     display: flex;
     justify-content: right;
     margin-right: 45%;
+}
+
+iframe{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    border: none;
+}
+    
+
+.maps{
+    display: flex;
+    padding-top: 1%;
+    margin-bottom: 20px;
+
+}
+
+.visit-us-adress{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: x-large;
+
 }
 
 
