@@ -124,6 +124,7 @@ nav{
     justify-content: center;
     justify-content: space-between;
     margin-top: -3%;
+    gap: 50px;
 }
 
 .ping-pong {  
@@ -302,6 +303,7 @@ nav{
 
     .mobile-ul{
         color: black;
+        padding: 0;
     }
 
     #mobileabout{
@@ -315,8 +317,9 @@ nav{
     }
     
     .game-cover-background {
-        width: 109px;
-        height: 140px;
+        height: 180px;
+        flex: 1 0 300px;
+       
     }
 
     #app-header-logo {
@@ -664,9 +667,39 @@ input {
     font-size: xx-large;
 }
 
+.checkout-container{
+    width: 100%;
+    display: flex;
+
+}
 
 
 
+/*.checkout-image-background{
+    width: 500px;
+    height: 700px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 14px;
+    background-image: url(/images/games/GameHub_covers9.jpg);
+    
+    
+}*/
+
+.checkout-image-cyberpunk img{
+    display: flex;
+    width: 35%;
+    border-radius: 14px;
+    margin-left: 50%;
+}
+
+.cyberpunk-headline-text p{
+    color: rgb(238, 165, 31);
+    font-size: x-large;
+    display: flex;
+    justify-content: right;
+    margin-right: 45%;
+}
 
 
 
