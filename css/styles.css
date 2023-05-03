@@ -77,6 +77,10 @@ body {
     padding: 10px;
 }
 
+ul{
+    padding: 0;
+}
+
 nav {
     margin-left: auto;
     position: sticky;
@@ -170,8 +174,8 @@ nav{
 }
 
 .shopping-cart-frame{
-    margin-top: 110px;
-    margin-left: 45%; 
+    margin-top: 120px;
+    margin-left: 50.3%; 
 }
 
 .shopping-cart-frame img{
@@ -251,8 +255,9 @@ nav{
 
 @media screen and (max-width: 800px) {
 
-
-    
+    textarea{
+        display: block;
+    }
 
     .text-container p{
         font-size: medium !important;
@@ -625,7 +630,7 @@ nav{
 
 input {
     background-color: rgb(255, 255, 255);
-    justify-content: space-between;
+    padding: 5px;
     
     
 }
@@ -643,14 +648,16 @@ input {
 .contact-form{
     display: flex;
     justify-content:center;
+    flex-direction: column;
     
 }
 
 .contact-form-left{
     flex-direction: column;
     display: flex;
-    
-    
+    padding: 10px;
+    width: 30%;
+    margin-left: 35%;
 }
 
 .submit-contact-btn{
@@ -674,19 +681,6 @@ input {
     display: flex;
 
 }
-
-
-
-/*.checkout-image-background{
-    width: 500px;
-    height: 700px;
-    margin: 5px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 14px;
-    background-image: url(/images/games/GameHub_covers9.jpg);
-    
-    
-}*/
 
 .checkout-image-cyberpunk img{
     display: flex;
