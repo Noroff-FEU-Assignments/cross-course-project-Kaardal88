@@ -652,9 +652,18 @@ input {
     
     padding: 50px;
     text-align: center;
-    
-    
+}
 
+
+.message-text{
+    margin: 0;
+    padding: 0;
+}
+
+textarea{
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .contact-form{
@@ -667,9 +676,9 @@ input {
 .contact-form-left{
     flex-direction: column;
     display: flex;
-    padding: 10px;
-    width: 30%;
-    margin-left: 35%;
+    padding: 5px;
+    width: 30%vw;
+    margin-left: 0%;
 }
 
 .submit-contact-btn{
