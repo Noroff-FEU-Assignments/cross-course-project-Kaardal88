@@ -155,6 +155,10 @@ nav{
     background-image: url(/images/games/GameHub_covers7.jpg);
 }
 
+.cyberpunk{
+    background-image: url(/images/games/GameHub_covers9.jpg);
+}
+
 .game-cover:hover {
     opacity: 80%;
 }
@@ -237,10 +241,10 @@ nav{
     }
 
     .used-games-info-text p{
-        color: white;
+        color:#F0A718;
         display: flex;
         justify-content: center;
-        padding: 70px;
+        padding: 50px;
         text-align: center;
         font-size: x-large;
     }
@@ -386,23 +390,30 @@ nav{
 
 }
 
-.unsplash-img-container{
+.unsplash-about-deco{
     display: flex;
-    margin-top: -3%;
-}
-
-.unsplash-background-cover{
-   
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
     border-radius: 14px;
-
 }
 
-.unsplash-img{
+.about-deco-cover{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 14px;
     background-image: url(/images/Unsplash/martin-katler-Rho7F8Qskh4-unsplash.jpg);
-    border-radius: 14px;
-    width: 50%;
-    height: 50%;
 }
+
+
+
 
 
 
