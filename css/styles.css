@@ -70,6 +70,7 @@ body {
     max-width: 1200px;
     max-height: 100%;
     margin: 0 auto;
+    padding-bottom: 30px;;
 }
 
 #app-header-logo {
@@ -697,25 +698,66 @@ textarea{
     font-size: xx-large;
 }
 
-.checkout-container{
-    width: 100%;
-    display: flex;
-
-}
-
 .checkout-image-cyberpunk img{
     display: flex;
     width: 35%;
     border-radius: 14px;
-    margin-left: 50%;
+    padding: 0px;
+    margin-top: 0;
+    margin-left: 33%;
+    
 }
 
 .cyberpunk-headline-text p{
     color: rgb(238, 165, 31);
     font-size: x-large;
     display: flex;
-    justify-content: right;
-    margin-right: 45%;
+    justify-content: center;
+    
+}
+
+.add-cart-container{
+    display: flex;
+    justify-content: center;
+}
+
+.add-btn{
+    background-color: #F0A718;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    display: flex;
+    }
+
+    .add-btn:hover{
+        background-color: green;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        font-weight: 900;
+        display: flex;
+        }
+    
+
+
+
+.cyberpunk-info-text{
+    width: 50%;
+    margin-left: 25%;
+    flex-direction: column;
+    color: white; 
+    display: flex;
+    text-align: center;
+    padding: 5px;
 }
 
 iframe{
@@ -740,6 +782,8 @@ iframe{
     font-size: x-large;
 
 }
+
+
 
 
 
