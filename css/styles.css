@@ -281,7 +281,7 @@ nav{
     }
 
     .nav-item-mobile {
-        background-color: #007CA3;
+        background-color: #5bc7e7;
         border-radius: 14px;
         width: 20vw;
         text-align: center;
@@ -291,8 +291,9 @@ nav{
 
 
     .nav-item-mobile a{
-        color: white;
+        color: #000000;
         text-decoration: none;
+        font-weight: 500;
     }
 
     .active-mobile {
