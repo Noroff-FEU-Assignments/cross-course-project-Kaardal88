@@ -216,9 +216,8 @@ nav{
 
 .mobile-content {
     visibility: hidden;
-    background-color: #007CA3;
     height: 100%;
-    padding: 1px;
+    width: 100%;
 }
 
 .start-gaming{

@@ -46,6 +46,7 @@
     width: 33.3333%;
     position: relative;
     float: left;
+    padding: 8px;
 }
 
 .slider-img-container img {
