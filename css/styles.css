@@ -129,7 +129,8 @@ nav{
     justify-content: center;
     justify-content: space-between;
     margin-top: -3%;
-    gap: 50px;
+    padding: 5px;
+    gap: 90px;
 }
 
 .ping-pong {  
@@ -589,33 +590,6 @@ nav{
     margin: 0;
 }
 
-.used-games {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-}
- 
-.used-games-btn{
-    background-color: orange;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 100px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    cursor: pointer;
-    font-weight: 900;
-    text-decoration: none;
-    }
-
-.used-games-btn:hover{
-    background-color: green;
-    color: rgb(255, 255, 255);
-}
-
 input {
     background-color: rgb(255, 255, 255);
     padding: 5px;
@@ -777,6 +751,7 @@ iframe{
 
 .add-to-cart-a{
     text-decoration: none;
+    width: 50px;
 }
 
 .add-to-cart-container {
@@ -880,6 +855,45 @@ figure{
 .clickable-cart{
     margin: 0;
     padding: 0;
+}
+
+.usedgames-container{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    
+}
+
+.usedgames-button{
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 700;
+    
+
+
+}
+
+.usedgames-button:hover{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 700;
+}
+
+.usedgames-a{
+    text-decoration: none;
 }
 
 
