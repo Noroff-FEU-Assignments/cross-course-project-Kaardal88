@@ -419,11 +419,12 @@ nav{
     padding: 0;
     margin: 0;
     display: flex;
+    font-size: 1.5rem;
 }
 
 #pingpong-text-small{
     color:white;
-    font-size: 0.5rem;
+    font-size: 1rem;
     display: flex;
     padding: 0;
     margin: 0;
@@ -490,10 +491,11 @@ nav{
     padding: 0;
     margin: 0;
     display: flex;
+    font-size: 1.5rem;
 }
 
 #furious-text-small{
-    font-size: 0.5rem;
+    font-size: 1rem;
     display: flex;
     padding: 0;
     margin: 0;
@@ -533,10 +535,11 @@ nav{
     padding: 0;
     margin: 0;
     display: flex;
+    font-size: 1.5rem;
 }
 
 #superduper-text-small{
-    font-size: 0.5rem;
+    font-size: 1rem;
     display: flex;
     padding: 0;
     margin: 0;
@@ -576,10 +579,11 @@ nav{
     padding: 0;
     margin: 0;
     display: flex;
+    font-size: 1.5rem;
 }
 
 #assassin-text-small{
-    font-size: 0.5rem;
+    font-size: 1rem;
     display: flex;
     padding: 0;
     margin: 0;
