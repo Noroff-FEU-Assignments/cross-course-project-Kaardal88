@@ -896,6 +896,28 @@ figure{
     text-decoration: none;
 }
 
+.some-icons{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    
+}
+
+.facebook{
+    width: 3%;
+    margin: 5px;
+    
+}
+
+.instagram{
+    width: 3%;
+    margin: 5px;
+}
+
+.twitter{
+    width: 3%;
+    margin: 5px;
+}
 
 
 
