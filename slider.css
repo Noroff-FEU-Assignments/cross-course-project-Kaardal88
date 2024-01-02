@@ -1,0 +1,55 @@
+/*SLIDER OF "DEAL OF THE WEEK" STARTS HERE*/    
+
+.slider-frame {
+    overflow: hidden;
+    max-height: 320px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: -50px;
+    justify-content: center;
+    display: flex;
+}
+
+/*-------SLIDE ANIMATION----------*/
+
+@-webkit-keyframes slide_animation {
+    0% {left:0px}
+    10% {left:0px}
+    20% {left:100%}
+    30% {left:100%}
+    40% {left:200%}
+    50% {left:200%}
+    60% {left:100%}
+    70% {left:100%}
+    80% {left:0px}
+    90% {left:0px}
+    100% {left:0px}
+}
+
+.slide-images {
+    width: 300%;
+    max-height: 320px;
+    position: absolute;
+     margin: 0 0 0 -200%;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running; 
+    cursor:pointer;
+}
+
+.slider-img-container {
+    max-height: 320px;
+    width: 33.3333%;
+    position: relative;
+    float: left;
+    padding: 8px;
+}
+
+.slider-img-container img {
+    max-width: 100%;
+}
+
