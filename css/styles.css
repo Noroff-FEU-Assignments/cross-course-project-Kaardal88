@@ -134,31 +134,31 @@ nav{
 }
 
 .ping-pong {  
-    background-image: url(/images/games/GameHub_covers.jpg);    
+    background-image: url(/images/games/GameHub_covers.jpg);  /*JS API*/
 }
 
 .furious {
-    background-image: url(/images/games/GameHub_covers4.jpg);
+    background-image: url(/images/games/GameHub_covers4.jpg); /*JS API*/
 }
 
 .super-duper {
-    background-image: url(/images/games/GameHub_covers2.jpg)
+    background-image: url(/images/games/GameHub_covers2.jpg) /*JS API*/
 }
 
 .assassin {
-    background-image: url(/images/games/GameHub_covers5.jpg)
+    background-image: url(/images/games/GameHub_covers5.jpg) /*JS API*/
 }
 
 .space-war {
-    background-image: url(/images/games/GameHub_covers6.jpg)
+    background-image: url(/images/games/GameHub_covers6.jpg) /*JS API*/
 }
 
 .racing {
-    background-image: url(/images/games/GameHub_covers7.jpg);
+    background-image: url(/images/games/GameHub_covers7.jpg); /*JS API*/
 }
 
 .cyberpunk{
-    background-image: url(/images/games/GameHub_covers9.jpg);
+    background-image: url(/images/games/GameHub_covers9.jpg); /*JS API*/
 }
 
 .game-cover:hover {
