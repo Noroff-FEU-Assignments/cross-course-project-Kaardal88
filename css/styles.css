@@ -10,6 +10,7 @@
     --fw-black: 900;
 }
 
+
 body {
     background-color: black;
     background-image: url(/images/Bluryblue.png);
@@ -45,7 +46,8 @@ body {
     text-align: center;
     padding: 10px;
     border-top: 1px solid white;
-    margin-top: 75px;
+    margin-top: 15%;
+    margin-bottom: 0;
     justify-content: flex-end;
     
 }
@@ -70,7 +72,7 @@ body {
     max-width: 1200px;
     max-height: 100%;
     margin: 0 auto;
-    padding-bottom: 30px;;
+    /* padding-bottom: 30px; */
 }
 
 #app-header-logo {
@@ -131,6 +133,7 @@ nav{
     margin-top: -3%;
     padding: 5px;
     gap: 90px;
+    color: white;
 }
 
 .ping-pong {  
@@ -260,6 +263,8 @@ nav{
 
 @media screen and (max-width: 800px) {
 
+    
+
     textarea{
         display: block;
     }
@@ -333,6 +338,10 @@ nav{
         height: 300px;
         flex: 1 0 300px;
        
+    }
+
+    .game-catalogue{
+        justify-content: center;
     }
 
     #app-header-logo {
@@ -919,6 +928,96 @@ figure{
     width: 3%;
     margin: 5px;
 }
+
+/*JS styles Details page*/
+
+@media screen and (max-width: 800px) {
+
+    .description-textbox{
+        font-size: smaller;
+    }
+
+    p{
+        font-size: smaller;
+    }
+
+    #displayedGameTitle{
+        font-size: larger;
+    }
+
+    h3{
+        font-size: smaller;
+    }
+
+    
+}
+
+#displayedGameTitle{
+    color: white;
+    
+}
+
+.game-title{
+    color: white;
+    display: column;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+
+.displayedImg{
+    width: 50%;
+    border-radius: 14px;
+}
+
+.description-textbox{
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.background-info{
+    background-color: rgba(255, 255, 255, 0.151);
+    padding-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+}
+
+/*Loading indicator*/
+
+.loadingSpinner {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    width: 150px;
+    height: 150px;
+    animation: spin 2s linear infinite;
+    position:relative;
+    z-index: 1100;
+    
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #loadingIndicator{
+    display: none; 
+  }
 
 
 

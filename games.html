@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">-->
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <script src="/js/games.js"></script>
 </head>
 
 <body>
@@ -25,13 +26,13 @@
             </a>
 
 
-            <div class="shopping-cart-frame">
+           <!--  <div class="shopping-cart-frame">
                 <a class="clickable-cart" href="checkout01.html">
                     <img id="cart-orange" src="images/Ikoner/cart-outline-orange.png"
                         alt="orange image of shopping cart">
                     <img id="cart-white" src="images/Ikoner/cart-outline.png" alt="white image of shopping cart">
                 </a>
-            </div>
+            </div> -->
 
             <nav class="desktop-nav">
                 <ul>
@@ -60,58 +61,17 @@
 
     <main class="main-view">
 
-        <div class="game-catalogue">
-            <div class="game-cover-background">
-                <a href="checkout01.html">
-                    <div class="game-cover ping-pong"></div>
-                </a>
-                <div class="spaced-row">
-                    <div class="pingpong-text">
-                        <p id="pingpong-text-big">PING PONG</p> <!--JS API-->
-                        <p id="pingpong-text-small">PLAYBOX</p> <!--JS API-->
-                    </div>
+        <div class="loadingSpinner" id="loadingIndicator">
+      
+        </div>
 
-                </div>
-            </div>
+        <div class="game-catalogue" id="game-catalogue">
+   
+        </div>
 
-            <div class="game-cover-background">
-                <a href="checkout01.html">
-                    <div class="game-cover furious"></div>
-                </a>
-                <div class="spaced-row-furious">
-                    <div class="furious-text">
-                        <p id="furious-text-big">FURIOUS</p><!--JS API-->
-                        <p id="furious-text-small">PLAYBOX</p><!--JS API-->
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="game-cover-background">
-                <a href="checkout01.html">
-                    <div class="game-cover super-duper"></div>
-                </a>
-                <div class=spaced-row-superduper>
-                    <div class="superduper-text">
-                        <p id="superduper-text-big">SUPER DUPER</p><!--JS API-->
-                        <P id="superduper-text-small">PLAYBOX</P><!--JS API-->
-                    </div>
-
-                </div>
-            </div>
-
-
-    </main>
-
-
-    <div class="usedgames-container">
-        <a href="usedgames.html" class="usedgames-a">
-            <button class="usedgames-button">USED GAMES</button>
-        </a>
-    </div>
-
-
+        <p class="footer-text">Powered By GameHub Engine</p>
 </body>
+
+
 
 </html>

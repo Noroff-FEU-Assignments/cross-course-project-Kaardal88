@@ -10,11 +10,12 @@
   <meta charset="UTF-8">
   <meta name="author" content="Kim-Andre Kaardal">
   <link href="/css/styles.css" rel="stylesheet">
-  <link href="slider.css" rel="stylesheet">
+  <link href="/css/slider.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!--<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">-->
   <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+  <script src="/js/fetch.js"></script>
 </head>
 
 <body>
@@ -31,13 +32,14 @@
 
 
       
-
-      <div class="shopping-cart-frame">
+        <!--Because of not having a functional shoppingcart I commented this section out. I want to keep it for later-->
+        
+      <!-- <div class="shopping-cart-frame">
         <a class="clickable-cart" href="checkout01.html">
           <img id="cart-orange" src="images/Ikoner/cart-outline-orange.png" alt="orange image of shopping cart">
           <img id="cart-white" src="images/Ikoner/cart-outline.png" alt="white image of shopping cart">
         </a>
-      </div>
+      </div> -->
 
 
       <nav class="desktop-nav">
@@ -83,67 +85,20 @@
       </a>
     </div>
     <div class="mobile-content">
-
+      
+      <!--Only shows in mobile view-->
       <p class="start-gaming">START <span class=highlight>GAMING</span> TODAY</p>
       <div class="games-btn">
       </div>
     </div>
 
-    <div class="game-catalogue">
-      <div class="game-cover-background">
-        <a href="checkout01.html">
-          <div class="game-cover ping-pong"></div>
-        </a>
-        <div class="spaced-row">
-          <div class="pingpong-text"> 
-            <p id="pingpong-text-big">PING PONG</p> <!--JS API-->
-            <p id="pingpong-text-small">PLAYBOX</p> <!--JS API-->
-          </div>
+    <div class="loadingSpinner" id="loadingIndicator">
+      
+  </div>
 
-
-        </div>
-      </div>
-
-      <div class="game-cover-background">
-        <a href="checkout01.html">
-          <div class="game-cover furious"></div>
-        </a>
-        <div class="spaced-row-furious">
-          <div class="furious-text">
-            <p id="furious-text-big">FURIOUS</p> <!--JS API-->
-            <p id="furious-text-small">PLAYBOX</p> <!--JS API-->
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="game-cover-background">
-        <a href="checkout01.html">
-          <div class="game-cover super-duper"></div>
-        </a>
-        <div class=spaced-row-superduper>
-          <div class="superduper-text">
-            <p id="superduper-text-big">SUPER DUPER</p> <!--JS API-->
-            <P id="superduper-text-small">PLAYBOX</P> <!--JS API-->
-          </div>
-
-        </div>
-      </div>
-
-      <div class="game-cover-background">
-        <a href="checkout01.html">
-          <div class="game-cover assassin"></div>
-        </a>
-        <div class="spaced-row-assassin">
-          <div class="assassin-text">
-            <p id="assassin-text-big">ASSASSIN</p> <!--JS API-->
-            <p id="assassin-text-small">PLAYBOX</p> <!--JS API-->
-          </div>
-
-        </div>
-      </div>
-    </div>
+  <div class="game-catalogue" id="game-catalogue">
+   
+  </div>
 
 
 
