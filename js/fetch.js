@@ -54,4 +54,5 @@ function createGameElement(game, loadingIndicator) {
 }
 
 window.addEventListener('pageshow', function(event) {         
-const loadingIndicator = document.getElementById('loadingIndicator');     loadingIndicator.style.display = 'none'; });
+const loadingIndicator = document.getElementById('loadingIndicator');     
+        loadingIndicator.style.display = 'none'; });
