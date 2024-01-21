@@ -1,15 +1,10 @@
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const apiUrl = 'https://api.noroff.dev/api/v1/gamehub';
     const gameCatalogueElement = document.getElementById('game-catalogue');
     const loadingIndicator = document.getElementById('loadingIndicator');
     const loadingSpinner = document.querySelector(".loadingSpinner");
   
- 
+ //Fetch api, error handling and displaying of games
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
@@ -21,14 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
             data.forEach(game => {
                 const gameElement = createGameElement(game, loadingIndicator);
                 gameCatalogueElement.appendChild(gameElement); 
+                //Display all of the games from the API call
                 const displayedGames = [];
                 let length = data.length = 10;       
             });
-
-            
-          
-        
-        })
+            })
         .catch(error => {
             console.error('Error:', error);
         });
@@ -56,13 +48,10 @@ function createGameElement(game, loadingIndicator) {
     gameElement.addEventListener('click', () => {
         // Show loading indicator
         loadingIndicator.style.display = 'block';
-        
- 
         // Wait for 1 seconds before redirecting
         setTimeout(() => {
             window.location.href = `details.html?id=${game.id}`;
         }, 1000); 
     });
- 
-    return gameElement;
+        return gameElement;
 }

@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Game ID not provided.');
     }
 });
- 
+
+//Data who get's displayed from the api call 
 function displayGameDetails(gameDetails) {
     const detailsContainer = document.getElementById('game-details');
     detailsContainer.innerHTML = `
@@ -36,8 +37,5 @@ function displayGameDetails(gameDetails) {
 <p><b>Age Limit:</b> ${gameDetails.ageRating}</p>
 <h3><b>Price:</b> ${gameDetails.price}</h3>
 </div>
-
-        
-    `;
-
+`;
 }

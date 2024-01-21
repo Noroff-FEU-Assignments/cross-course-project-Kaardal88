@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <title>GameHub | Home</title>
   <link rel="icon" type="image/x-icon" href="/images/GameHub_Logo_white_text.png">
@@ -17,22 +16,13 @@
   <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
   <script src="/js/fetch.js"></script>
 </head>
-
 <body>
-
-
-
-  <header id="app-header">
-
-    <div id="app-header-content">
-
+<header id="app-header">
+  <div id="app-header-content">
       <a href="index.html">
         <img id="app-header-logo" src="/images/GameHub_Logo_white_text.png" alt="Business logo of gamehub">
       </a>
-
-
-      
-        <!--Because of not having a functional shoppingcart I commented this section out. I want to keep it for later-->
+      <!--Because of not having a functional shoppingcart I commented this section out. I want to keep it for later-->
         
       <!-- <div class="shopping-cart-frame">
         <a class="clickable-cart" href="checkout01.html">
@@ -40,9 +30,7 @@
           <img id="cart-white" src="images/Ikoner/cart-outline.png" alt="white image of shopping cart">
         </a>
       </div> -->
-
-
-      <nav class="desktop-nav">
+  <nav class="desktop-nav">
         <ul>
           <li><a href="index.html" class="nav-item active">Home</a></li>
           <li><a href="games.html" class="nav-item">Games</a></li>
@@ -52,7 +40,6 @@
       </nav>
     </div>
   </header>
-
   <div class="mobile-navbar">
     <nav class="mobile-buttons">
       <ul class="mobile-ul">
@@ -63,14 +50,10 @@
       </ul>
     </nav>
   </div>
-
-
-
   <main class="main-view">
-
-
-    <div class="slider-frame">
-      <a href="checkout01.html">
+    <div class="loadingSpinner" id="loadingIndicator"></div>
+      <div class="slider-frame">
+      <a href="/">
         <div class="slide-images">
           <div class="slider-img-container">
             <img src="images/games/index_png/Forge_legend.png" alt="sales image of the game Forge Legend">
@@ -83,29 +66,15 @@
           </div>
         </div>
       </a>
-    </div>
+      </div>
     <div class="mobile-content">
-      
       <!--Only shows in mobile view-->
       <p class="start-gaming">START <span class=highlight>GAMING</span> TODAY</p>
       <div class="games-btn">
       </div>
     </div>
-
-    <div class="loadingSpinner" id="loadingIndicator">
-      
-  </div>
-
-  <div class="game-catalogue" id="game-catalogue">
-   
-  </div>
-
-
-
+      <div class="game-catalogue" id="game-catalogue"></div>
   </main>
-
   <p class="footer-text">Powered By GameHub Engine</p>
-
 </body>
-
 </html>
