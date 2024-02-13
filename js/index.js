@@ -36,6 +36,8 @@ function createGameElement(game, loadingIndicator) {
             <div class="spaced-row">
                 <div class="game-text">
                     <p class="game-text-big">${game.title}</p>
+                    <p class="price-tag" >${game.price} $</p>
+                    
                 </div>
             </div>
         </div>
