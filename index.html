@@ -11,6 +11,7 @@
   <link href="/css/styles.css" rel="stylesheet">
   <link href="/css/slider.css" rel="stylesheet">
   <link href="/css/smoke.css" rel="stylesheet">
+  <link href="/css/popup.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!--<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">-->
@@ -28,6 +29,7 @@
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
   <script src="/js/index.js"></script>
+  <script src="/js/onlineplayers.js" defer></script>
 </head>
 <body>
 <header id="app-header">
@@ -95,7 +97,28 @@
           <div class="card-background"></div>
       </div>
 
+      <div class="popup-container" id="openPopup">
+        <div class="popup-window">
+          <img class="controller-window" src="/images/controller.png">
+          <p><span class="coming-soon">!!!COMING SOON!!!</span><p>
+          <p>WE ARE CURRENTLY WORKING ON MAKING ONLINE GAMES READY FOR YOU!<br> Thank you for your patience</p>
+          <img class="popup-ghub-logo" src="/images/GameHub_Logo_white_text.png">
+          <button class="close-popup-btn" type="button" onclick="closePopup()">Close</button>
+        </div>
+      </div>
+
       <div class="small-index-card-main-container">
+
+        <!-- <a class="index-card-2-link" href=""> -->
+          <div id="onlineplayersOnclick" id="openPopup"  onclick="openPopup()"class="index-card-container-small-2">
+            
+          
+          <div class="gradient-text-container-small" id="openPopup">
+            <h1 class="gradient-text-skills">JOIN <span class="forces-indexcard-text">FORCES</span> AND FUEL<br> YOUR <span class="skills-indexcard-text">SKILLS</span></h1>
+          </div>
+          <div class="card-background-small"></div>
+        </div></a>
+
         <div class="index-card-container-small-1">
           
           <div class="smoke-wrap">
@@ -104,21 +127,14 @@
           
           </div>
 
-          <div class="gradient-text-container-small">
+          <!-- <div class="gradient-text-container-small">
             <h3 class="gradient-text-small"></h3>
           </div>
-          <div class="card-background-small"></div>
+          <div class="card-background-small"></div> -->
 
         </div>
 
-        <a class="index-card-2-link" href="/">
-          <div class="index-card-container-small-2">
-          
-          <div class="gradient-text-container-small">
-            <h1 class="gradient-text-skills">JOIN <span class="forces-indexcard-text">FORCES</span> AND FUEL<br> YOUR <span class="skills-indexcard-text">SKILLS</span></h1>
-          </div>
-          <div class="card-background-small"></div>
-        </div></a>
+        
 
       </div>
   </main>

@@ -1,0 +1,78 @@
+.popup-container{
+    background-color: rgb(67, 198, 221);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 14px;
+    visibility: hidden;
+    
+
+    }
+
+    .open-popup{
+        background-color: rgb(67, 198, 221);
+        transform: translate(0%, 50%);
+        margin-left: 3%;
+        margin-right: 3%;
+        position: relative;
+        border-radius: 14px;
+        z-index: 1100;
+        visibility: visible;
+        box-shadow: orange 1px 3px  15px 10px;
+        
+        
+        
+    
+        }
+
+.controller-window{
+    width: 20%;
+    display: flex;
+    margin-top: -10%;
+    transform: translate(-50%,-50%);
+    margin-left: 50%;
+}
+
+.popup-window{
+    text-align: center;
+    font-weight: 900;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    /* text-shadow: black 3px 2px ; */
+    }
+
+.coming-soon{
+    color: red;
+    text-shadow: black 2px 2px 2px;
+    font-size: xx-large;
+}
+
+.popup-ghub-logo{
+    width: 50%;
+    margin-top: 8%;
+    padding: 10px;
+    opacity: 50%;
+    filter: blur(3px)
+}
+
+.close-popup-btn{
+    color: black;
+    background-color: greenyellow;
+    text-decoration: none;
+    font-size: large;
+    border: none;
+    text-transform: uppercase;
+    padding: 15px 100px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    box-shadow: grey 5px 5px 10px;
+    cursor: pointer;
+
+}
+
+.close-popup-btn:hover{
+    background-color: rgb(119, 185, 19);
+    transform: scale(1.05);
+}
