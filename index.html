@@ -1,148 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>GameHub</title>
-  <link rel="icon" type="image/x-icon" href="/images/GameHub_Logo_white_text.png">
-  <meta name="description"
-    content="A place for gamers to buy and sell used games. Look through our big catalouge of popular games!">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <meta name="author" content="Kim-Andre Kaardal">
-  <link href="/css/styles.css" rel="stylesheet">
-  <link href="/css/slider.css" rel="stylesheet">
-  <link href="/css/smoke.css" rel="stylesheet">
-  <link href="/css/popup.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!--<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">-->
-  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
-  <!--HOTJAR CODE-->
-  <!-- Hotjar Tracking Code for https://guileless-travesseiro-d051a0.netlify.app -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3852595,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-  <script src="/js/index.js"></script>
-  <script src="/js/onlineplayers.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub</title>
+    <link href="/css/smoke.css" rel="stylesheet">
+    <link href="/css/landingpage.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/GameHub_Logo_white_text.png">
 </head>
 <body>
-<header id="app-header">
-  <div id="app-header-content">
-      <a href="index.html">
-        <img id="app-header-logo" src="/images/GameHub_Logo_white_text.png" alt="Business logo of gamehub">
-      </a>
-      <!--Because of not having a functional shoppingcart I commented this section out. I want to keep it for later-->
-        
-      <!-- <div class="shopping-cart-frame">
-        <a class="clickable-cart" href="checkout01.html">
-          <img id="cart-orange" src="images/Ikoner/cart-outline-orange.png" alt="orange image of shopping cart">
-          <img id="cart-white" src="images/Ikoner/cart-outline.png" alt="white image of shopping cart">
-        </a>
-      </div> -->
-  <nav class="desktop-nav">
-        <ul>
-          <li><a href="index.html" class="nav-item active">Home</a></li>
-          <li><a href="games.html" class="nav-item">Games</a></li>
-          <li><a href="about.html" class="nav-item">About</a></li>
-          <li><a href="contact.html" class="nav-item">Contact</a></li>
-        </ul>
-      </nav>
+    <h2 class="motivation-landing">EXPLORE ENDLESS WORLDS. FUEL YOUR PASSION</h2>
+    <div class="landing-container"> <a href="/index.html"><button type="button" class="enter-index">ENTER</button></a>
+        <img class="smoke-1" src="/images/pssmoke.png" alt="smoke">
     </div>
-  </header>
-  <div class="mobile-navbar">
-    <nav class="mobile-buttons">
-      <ul class="mobile-ul">
-        <li class="nav-item-mobile active-mobile"><a href="index.html">HOME</a></li>
-        <li class="nav-item-mobile"><a href="games.html">GAMES</a></li>
-        <li class="nav-item-mobile"><a href="about.html">ABOUT</a></li>
-        <li class="nav-item-mobile"><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  
-
-  <main class="main-view">
-    <div class="loadingSpinner" id="loadingIndicator"></div>
-      <div class="slider-frame">
-      <a href="/games.html">
-        <div class="slide-images">
-          <div class="slider-img-container">
-            <img src="images/games/index_png/Forge_legend.png" alt="sales image of the game Forge Legend">
-          </div>
-          <div class="slider-img-container">
-            <img src="images/games/index_png/Cyberpunk.png" alt="sales image of the game Cyberpunk">
-          </div>
-          <div class="slider-img-container">
-            <img src="images/games/index_png/Assassin.png" alt="sales image of the game Assassin">
-          </div>
-        </div>
-      </a>
-      </div>
-    <div class="mobile-content">
-      <!--Only shows in mobile view-->
-      <p class="start-gaming">START <span class=highlight>GAMING</span> TODAY</p>
-      <div class="games-btn">
-      </div>
-    </div>
-      <div class="game-catalogue" id="game-catalogue"></div>
-
       
-
-      <div class="popup-container" id="openPopup">
-        <div class="popup-window">
-          <img class="controller-window" src="/images/controller.png">
-          <p><span class="coming-soon">!!!COMING SOON!!!</span><p>
-          <p>WE ARE CURRENTLY WORKING ON MAKING ONLINE GAMES READY FOR YOU!<br> Thank you for your patience</p>
-          <img class="popup-ghub-logo" src="/images/GameHub_Logo_white_text.png">
-          <button class="close-popup-btn" type="button" onclick="closePopup()">Close</button>
-        </div>
-      </div>
-
-      <div class="small-index-card-main-container">
-
-        <!-- <a class="index-card-2-link" href=""> -->
-          <div id="onlineplayersOnclick" id="openPopup"  onclick="openPopup()"class="index-card-container-small-2">
-            
-            
-          
-          <div class="gradient-text-container-small" id="openPopup">
-            <h1 class="gradient-text-skills">JOIN <span class="forces-indexcard-text">FORCES</span> AND FUEL<br> YOUR <span class="skills-indexcard-text">SKILLS</span></h1>
-            
-          </div>
-          <div class="card-background-small"></div>
-          
-        </div></a>
-
-        
-
-        <div class="index-card-container-small-1">
-
-          
-
-          <!-- <div class="gradient-text-container-small">
-            <h3 class="gradient-text-small"></h3>
-          </div>
-          <div class="card-background-small"></div> -->
-
-        </div>
-
-        
-
-      </div>
-      <div class="index-card-container">
-        <div class="gradient-text-container">
-          <h2 class="gradient-text">EXPLORE ENDLESS WORLDS WITH FRIENDS </h2>
-        </div>
-        <div class="card-background"></div>
-    </div>
-  </main>
-  <p class="footer-text">Powered By GameHub Engine</p>
 </body>
 </html>
