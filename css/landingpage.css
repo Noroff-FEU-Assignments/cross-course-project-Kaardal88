@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-container {
+    width: 100%;
+    position: relative; 
+  }
+
+  .enter-index {
+    background-color: orange;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border: none;
+    border-radius: 50px;
+    padding: 20px 100px;
+    z-index: 999;
+    font-weight: 600;
+    font-size: x-large;
+    box-shadow: grey 2px 5px 10px;
+  }
+
+  .enter-index:hover{
+   cursor: pointer;
+    background-color: orange;
+    box-shadow: inset black 2px 5px 10px;
+  }
+
+.motivation-landing{
+    color: white;
+    position: absolute;
+    width: 700px;
+    margin-top: 15%;
+    text-align: center;
+    box-shadow: black 5px 10px 10px 10px;
+    font-size: x-large;
+
+}
+
+@media screen and (max-width: 800px) {
+    .motivation-landing{
+        width: 200px;
+        padding: 20px;
+        margin-top: 60%;
+    }
+}
+
+ 

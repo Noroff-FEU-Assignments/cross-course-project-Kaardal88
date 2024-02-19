@@ -1,34 +1,20 @@
 .smoke-1{
-    width: 1200px;
+    width: 50%;
     height: 100%;
-    object-fit:cover;
-    position: relative;
-    overflow: hidden;
-    margin-top: 5%;
+    object-fit:contain;
+    margin-left: 25%;
+    
     
 }
 
- .smoke-textbox{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    background-color: rgb(248, 224, 10);
-    border-radius: 14px;
-    margin-top: 50%;
-    z-index: 1000;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 5px;
-    } 
-
-@media screen and (max-width: 800px){
-    .smoke-textbox{
-        font-size: x-small;
-        top: 25%;
+@media screen and (max-width: 800px) {
+    .smoke-1{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
 }
-
-
 .smoke-1{
     animation: smoke-1 7s linear infinite;
     }

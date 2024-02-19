@@ -9,7 +9,7 @@
     }
 
     .open-popup{
-        background-color: rgb(67, 198, 221);
+        background-color: rgb(156, 172, 175);
         transform: translate(0%, 50%);
         margin-left: 3%;
         margin-right: 3%;
@@ -18,6 +18,7 @@
         z-index: 1100;
         visibility: visible;
         box-shadow: orange 1px 3px  15px 10px;
+       
         
         
         
@@ -47,7 +48,7 @@
 }
 
 .popup-ghub-logo{
-    width: 50%;
+    width: 40%;
     margin-top: 8%;
     padding: 10px;
     opacity: 50%;
@@ -55,10 +56,11 @@
 }
 
 .close-popup-btn{
-    color: black;
-    background-color: greenyellow;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 47, 47);
     text-decoration: none;
     font-size: large;
+    font-weight: 600;
     border: none;
     text-transform: uppercase;
     padding: 15px 100px;
