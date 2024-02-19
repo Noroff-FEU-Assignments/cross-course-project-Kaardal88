@@ -444,17 +444,35 @@ nav{
 
 @media screen and (max-width: 800px) {
 
-   
+    .index-card-container{
+        margin-top: 50%;
+    }
 
-    .index-card-container-small-2:hover{
+   /*  .index-card-container-small-2:hover{
         transform: none;
         box-shadow: none;
-    }
+        grid: none;
+        margin: 0;
+        padding: 0; 
+       } */
 
     .index-card-container-small-2{
         font-size: x-small;
         height: 205px;
+        width: 400px;
+        margin-top: 1%;
+        display: grid none;
+        grid-template-columns: none;
+        margin-left: auto;
+        margin-right: auto;
 
+    }
+
+    .small-index-card-main-container{
+        display: block;
+        grid-template-columns: none;
+
+       
     }
 
     
