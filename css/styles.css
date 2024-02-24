@@ -444,6 +444,42 @@ nav{
 
 @media screen and (max-width: 800px) {
 
+    .maps{
+        width: 90%;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .contact-form{
+        width: 95%;
+
+    }
+
+    .contact-form-container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        
+    }
+
+    .contact-form-left{
+        width: 100%;
+    }
+
+    .contact-input{
+        width: 150%;
+        margin-left: -25%;
+        text-align: center;
+    }
+
+    .contact-message{
+        width: 150%;
+        margin-left: -25%;
+       
+    }
+
     .index-card-container{
         margin-top: 50%;
     }
@@ -814,18 +850,21 @@ nav{
     margin: 0;
 }
 
-input {
+/* input {
     background-color: rgb(255, 255, 255);
     padding: 5px;
     
     
 }
-
+ */
 .contact-form-container{
     background-color:  rgba(255, 255, 255, 0.192);
     border-radius: 14px;
     padding: 50px;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -842,26 +881,75 @@ textarea{
 
 .contact-form{
     display: flex;
-    justify-content:center;
     flex-direction: column;
+    justify-content: center;
+    transform: translate(25%);
+
     
+}
+
+.contact-form-logo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+   
+}
+
+.contact-input{
+    padding:20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    
+
+}
+
+.contact-message{
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.contact-message:focus{
+    background-color: rgb(231, 252, 252);
+    outline-color: orange;
+    border: none;
+}
+
+.contact-input:focus{
+    background-color: rgb(231, 252, 252);
+    outline-color: orange;
+    border: none;
 }
 
 .contact-form-left{
     flex-direction: column;
     display: flex;
     padding: 5px;
-    width: 30%vw;
+    width: 50%;
     margin-left: 0%;
 }
 
 .submit-contact-btn{
-    background-color: green;
-    color: white;
+    background-color: #F0A718;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 500;
     border: none;
-    border-radius: 14px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-top: 3%;
+    border-radius: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.submit-contact-btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: greenyellow;
 }
 
 .contactus-headline{
@@ -960,8 +1048,11 @@ iframe{
 
 .maps{
     display: flex;
-    padding-top: 1%;
-    margin-bottom: 20px;
+    margin-top: 5%;
+    background-color:  rgba(255, 255, 255, 0.192);
+    border-radius: 14px;
+    
+    
 
 }
 

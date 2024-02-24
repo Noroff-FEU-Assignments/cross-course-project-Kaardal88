@@ -64,7 +64,7 @@
     <main class="main-view">
         <div class="contact-form-container">
             <div class="contactus-headline">
-                <p class="contactus-letters">Contact Us</p>
+                <p class="contactus-letters">CONTACT US</p>
             </div>
             <div class="contact-form">
                 <div class="some-icons">
@@ -72,25 +72,31 @@
                     <img src="/images/Ikoner/Instagram_logo_2016.svg.png" class="instagram" alt="instagram logo">
                     <img src="/images/Ikoner/twitter-icon.svg" class="twitter" alt="twitter logo">
                 </div>
+
                 <div class="contact-form-left">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="text" placeholder="Subject" />
+                    <input type="text" name="name" placeholder="Name" class="contact-input">
+                    <input type="email" name="email" placeholder="Email" class="contact-input">
+                    <input type="text" name="text" placeholder="Subject" class="contact-input">
+                    <textarea rows="12" cols="/" placeholder="Message" class="contact-message"></textarea>
                 </div>
-                <div class="message-text">
-                    <textarea rows="8" cols="40" placeholder="Message"></textarea>
-                </div>
+                <!-- <div class="contact-form-logo">
+                    <img src="/images/GameHub_Logo_white_text.png" alt="logo">
+                </div> -->
+               
+                
             </div>
                 <div class="submit-contact-container">
                     <input class="submit-contact-btn" type="submit" name="submitInfo" value="SUBMIT">
                 </div>
             </div>
-            <p class="visit-us-adress">Our address: Festplassen 10, 5020 Bergen</p>
+            
         <div class="maps">
+            <p class="visit-us-adress">OUR ADDRESS:<br> Festplassen 10, 5020 Bergen</p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15770.294601790501!2d5.315401876071271!3d60.39094034095726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46390d4966767d77%3A0x9e42a03eb4de0a08!2sBergen!5e0!3m2!1sno!2sno!4v1683054385043!5m2!1sno!2sno"
                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
+    <p class="footer-text">Powered By GameHub Engine</p>
 </body>
 </html>
