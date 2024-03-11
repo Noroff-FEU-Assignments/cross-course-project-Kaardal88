@@ -282,10 +282,10 @@ nav{
 .game-catalogue {
     width: 100%;
     display: flex;
-    display: inline-flex;
+    /* display: inline-flex; */
     flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-between;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
     margin-top: -3%;
     padding: 5px;
     padding-top: 50px;
