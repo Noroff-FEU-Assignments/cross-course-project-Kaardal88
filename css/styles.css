@@ -1214,23 +1214,27 @@ figure{
 .some-icons{
     display: flex;
     flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+ 
+   
     padding: 5px;
     
 }
 
 .facebook{
-    width: 3%;
+    width: 35px;
     margin: 5px;
     
 }
 
 .instagram{
-    width: 3%;
+    width: 35px;
     margin: 5px;
 }
 
 .twitter{
-    width: 3%;
+    width: 35px;
     margin: 5px;
 }
 
