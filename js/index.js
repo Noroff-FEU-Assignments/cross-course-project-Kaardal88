@@ -1,29 +1,59 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'https://api.noroff.dev/api/v1/gamehub';
+import {apiUrl} from "./data/constants";
+
+async function getProducts(){
+    try{
+        const response = await fetch(apiUrl);
+        const getResults = await response.json();
+        console.log(getProducts);
+    }
+
+    catch(error){
+        console.log(error);
+    }
+}
+
+getProducts();
+
+
+
+
+
+
+
+
+
+
+/*<document.addEventListener('DOMContentLoaded', function() {
+    
+
+    const apiUrl = 'https://games.gamehubz.no/wp-json/wc/v3/products';
     const gameCatalogueElement = document.getElementById('game-catalogue');
     const loadingIndicator = document.getElementById('loadingIndicator');
     const loadingSpinner = document.querySelector(".loadingSpinner");
   
  //Fetch api, error handling and displaying of games
-    fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch games: ' + response.statusText);
-            }
-            return response.json();
-        })
-        .then(data => {
-            data.forEach(game => {
-                const gameElement = createGameElement(game, loadingIndicator);
-                gameCatalogueElement.appendChild(gameElement); 
-                //Display only four of the games on index page
-                const displayedGames = [];
-                let length = data.length = 4;       
-            });
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+ fetch(apiUrl, {
+    headers: {
+      'Authorization': `Basic ${basicAuth}` // Add authorization header
+    }
+  })
+    .then(response => {
+        console.log(response);
+      if (!response.ok) {
+        throw new Error('Failed to fetch games: ' + response.statusText);
+      }
+      return response.json();
+      
+    })
+    .then(data => {
+      data.forEach(game => {
+        const gameElement = createGameElement(game, loadingIndicator);
+        gameCatalogueElement.appendChild(gameElement);
+      });
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
 });
 
 
@@ -57,4 +87,4 @@ function createGameElement(game, loadingIndicator) {
 
 window.addEventListener('pageshow', function(event) {         
 const loadingIndicator = document.getElementById('loadingIndicator');     
-        loadingIndicator.style.display = 'none'; });
+        loadingIndicator.style.display = 'none'; });*/
