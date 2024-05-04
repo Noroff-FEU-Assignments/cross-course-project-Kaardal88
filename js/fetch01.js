@@ -1,11 +1,14 @@
+import {apiUrl} from "./data/constants.js";
+
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const gameId = urlParams.get('id');
     
  
     if (gameId) {
-        const apiUrl = `https://api.noroff.dev/api/v1/gamehub/${gameId}`;
-        fetch(apiUrl)
+        const gameURL = `${apiUrl}/${gameId}`;
+        /* const apiUrl = `https://api.noroff.dev/api/v1/gamehub/${gameId}`; */
+        fetch(gameURL)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch game details: ' + response.statusText);

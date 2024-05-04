@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'https://api.noroff.dev/api/v1/gamehub';
+    /* const apiUrl = 'https://api.noroff.dev/api/v1/gamehub'; */
     const gameCatalogueElement = document.getElementById('game-catalogue');
     const loadingIndicator = document.getElementById('loadingIndicator');
     const loadingSpinner = document.querySelector(".loadingSpinner");
   
  //Fetch api, error handling and displaying of games
-    fetch(apiUrl)
+   /*  fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch games: ' + response.statusText);
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => {
             console.error('Error:', error);
         });
-});
+}); */
 
 
  

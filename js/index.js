@@ -1,10 +1,12 @@
-import {apiUrl} from "./data/constants";
+import {apiUrl} from "./data/constants.js";
+import { productContainer } from "./data/constants.js";
+
 
 async function getProducts(){
     try{
         const response = await fetch(apiUrl);
         const getResults = await response.json();
-        console.log(getProducts);
+        createHTML(getResults);
     }
 
     catch(error){
@@ -13,6 +15,22 @@ async function getProducts(){
 }
 
 getProducts();
+
+function createHTML(products){
+  products.forEach(function(product)
+  {console.log(product);
+    productContainer.innerHTML += 
+      `<div>
+        <h5>${product.name}</h5>
+        <img src="${product.images[0].thumbnail}" alt="${product.name}">
+      
+      </div>`;
+  }
+)
+}
+
+
+
 
 
 

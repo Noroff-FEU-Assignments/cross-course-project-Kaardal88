@@ -293,6 +293,13 @@ nav{
     color: white;
 }
 
+.game-catalogue-1{
+    width: 100%;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.37) ;
+
+}
+
 .ping-pong {  
     background-image: url(/images/games/GameHub_covers.jpg);  /*JS API*/
 }
