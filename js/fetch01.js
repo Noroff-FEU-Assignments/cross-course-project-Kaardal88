@@ -1,46 +1,67 @@
-import {apiUrl} from "./data/constants.js";
+import { apiUrl } from "./data/constants.js";
+import { getQueryParameter } from "./helper/getQueryparameter.js";
 
-document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const gameId = urlParams.get('id');
-    
- 
-    if (gameId) {
-        const gameURL = `${apiUrl}/${gameId}`;
-        /* const apiUrl = `https://api.noroff.dev/api/v1/gamehub/${gameId}`; */
-        fetch(gameURL)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch game details: ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(gameDetails => {
-                displayGameDetails(gameDetails);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    } else {
-        // Handle case where no game ID is provided in URL
-        console.error('Game ID not provided.');
+const detailsContainer = document.getElementById("game-details");
+const gameDetailsContainer = document.querySelector("#game-details");
+
+// ---
+
+async function fetchGame() {
+  const gameId = getQueryParameter("id");
+
+  if (!gameId) {
+    // if falsy redirect back to homepage.
+    document.location.href = "/";
+  }
+
+  const gameUrl = `${apiUrl}/${gameId}`;
+
+  try {
+    const response = await fetch(gameUrl);
+
+    if (!response.ok) {
+      throw new Error("there was an error fetching the game");
     }
-});
 
-//Data who get's displayed from the api call 
-function displayGameDetails(gameDetails) {
-    const detailsContainer = document.getElementById('game-details');
-    detailsContainer.innerHTML = `
-<img class="displayedImg" src="${gameDetails.image}" alt="${gameDetails.title}">
-<div class="background-info">
-<h1 id="displayedGameTitle">${gameDetails.title}</h1>
-<p class="description-textbox"><b>About the Game:</b> ${gameDetails.description}</p>
-<p><b>Genre:</b> ${gameDetails.genre}</p>
-<p><b>Released:</b> ${gameDetails.released}</p>
-<p><b>Age Limit:</b> ${gameDetails.ageRating}</p>
-<h3><b>Price:</b> ${gameDetails.price}</h3>
-</div>
-`;
+    const game = await response.json();
+    console.log(game);
+    return game;
+  } catch (error) {
+    console.error(error);
+  }
 }
 
+// ---
 
+async function handleGameInformation() {
+  const game = await fetchGame();
+  try {
+    displayGameInformation(game, detailsContainer);
+  } catch (error) {
+    // displays the error to the console.
+    console.error(error);
+    // displays the error to the user.
+    gameDetailsContainer.innerHTML = "Something went wrong displaying the game";
+  }
+}
+handleGameInformation();
+
+// ---
+
+function displayGameInformation(game) {
+  detailsContainer.innerHTML = `
+    <img class="displayedImg" src="${game.images[0].src}" alt="${game.name}">
+    <div class="background-info">
+    <h1 id="displayedGameTitle">${game.name}</h1>
+    <p class="description-textbox"><b>About the Game:</b>${game.description}</p>
+    <p><b>Genre:</b> ${game.tags[0].name}</p>
+    
+    <h3><b>Price:</b> ${game.prices.price} ${game.prices.currency_prefix}</h3>
+    </div>
+    `;
+}
+
+{
+  /* <p><b>Released:</b> ${game.released}</p>
+    <p><b>Age Limit:</b> ${game.ageRating}</p> */
+}
