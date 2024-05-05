@@ -21,14 +21,29 @@ function createHTML(products){
   {console.log(product);
     productContainer.innerHTML += 
       `<div>
-        <h5>${product.name}</h5>
-        <img src="${product.images[0].thumbnail}" alt="${product.name}">
+        <h3>${product.name}</h3>
+        <img class="game-catalogue-1-2" src="${product.images[0].thumbnail}" alt="${product.name}">
       
       </div>`;
   }
 )
 }
 
+//Displayed games on index page 
+function createGameElement(game) {
+  const gameElement = document.createElement('div');}
+  gameElement.innerHTML = `
+      <div class="game-cover-background">
+          <div class="game-cover" style="background-image: url('${game.image}');"></div>
+          <div class="spaced-row">
+              <div class="game-text">
+                  <p class="game-text-big">${game.title}</p>
+                  <p class="price-tag" >${game.price} $</p>
+                  
+              </div>
+          </div>
+      </div>
+  `;
 
 
 

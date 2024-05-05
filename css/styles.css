@@ -294,12 +294,22 @@ nav{
 }
 
 .game-catalogue-1{
-    width: 100%;
-    height: 350px;
-    background: rgba(255, 255, 255, 0.37) ;
-
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr;
+   color: rgb(255, 255, 255);
+   flex-wrap: wrap;
+   display: flex;
+   gap: 100px;
+   
 }
 
+.game-catalogue-1-2:hover{
+    filter:sepia(70%);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition-timing-function:ease-in;
+    transition-duration: 0.2s;
+}
 .ping-pong {  
     background-image: url(/images/games/GameHub_covers.jpg);  /*JS API*/
 }
@@ -451,6 +461,10 @@ nav{
 
 @media screen and (max-width: 800px) {
 
+    .game-catalogue-1{
+        justify-content: center;
+    }
+
     .maps{
         width: 90%;
         justify-content: center;
@@ -491,14 +505,6 @@ nav{
         margin-top: 50%;
     }
 
-   /*  .index-card-container-small-2:hover{
-        transform: none;
-        box-shadow: none;
-        grid: none;
-        margin: 0;
-        padding: 0; 
-       } */
-
     .index-card-container-small-2{
         font-size: x-small;
         height: 205px;
@@ -534,9 +540,12 @@ nav{
 
     .mobile-navbar{
         visibility: visible;
-        margin-top: -240px;
+        margin-top: -20%;
         display:flex;
         justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        margin-left: 75%;
 
     }
 
@@ -600,8 +609,9 @@ nav{
     }
 
     #app-header-logo {
-        max-width: flex;
-    }
+         max-width: 800px;
+         margin-left: 50%; 
+         }
 
     #app-header {
         font-size: 0.5em;
